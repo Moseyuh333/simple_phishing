@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đặt vé máy bay, khách sạn giá rẻ nhất tại Trip.com. Ưu đãi hấp dẫn mỗi ngày!">
+    <meta name="keywords" content="đặt vé máy bay, khách sạn giá rẻ, du lịch">
+    <title>Trip.com - Đặt vé máy bay, khách sạn giá rẻ</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fake favicon giống Trip.com -->
+    <link rel="icon" href="https://vn.trip.com/favicon.ico">
+</head>
+<body>
+    <!-- Header giống Trip.com -->
+    <header class="fade-in">
+        <div class="logo">
+            <img src="https://logo.clearbit.com/vn.trip.com" alt="Trip.com" width="100">
+        </div>
+        <nav>
+            <a href="#" onclick="phishCaught()">✈️ Đặt vé máy bay</a>
+            <a href="#" onclick="phishCaught()">🏨 Khách sạn</a>
+            <a href="#" onclick="phishCaught()">🚗 Xe đưa đón</a>
+            <span class="lang">🌐 Tiếng Việt</span>
+        </nav>
+    </header>
+
+    <!-- Main content - form đăng nhập giả -->
+    <main class="login-container">
+        <div class="login-box slide-up">
+            <div class="icon-badge">🔐</div>
+            <h2>Đăng nhập Trip.com</h2>
+            <p>Nhập thông tin để tiếp tục đặt vé giá rẻ!</p>
+            
+            <!-- Form thu thập thông tin (demo) -->
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Email hoặc số điện thoại" id="username" required>
+                    <span class="input-icon">👤</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Mật khẩu" id="password" required>
+                    <span class="input-icon">🔒</span>
+                </div>
+                <button type="submit" class="btn-primary" onclick="phishCaught(event)">Đăng nhập ngay</button>
+                <button type="button" class="btn-secondary" onclick="phishCaught()">Quên mật khẩu?</button>
+            </form>
+            
+            <!-- Các nút khác để test -->
+            <div class="extra-buttons">
+                <button class="btn-offer" onclick="phishCaught()">🎁 Đặt vé ngay</button>
+                <button class="btn-offer" onclick="phishCaught()">💰 Xem ưu đãi</button>
+            </div>
+            
+            <div class="security-note">
+                <small>⚠️ DEMO GIÁO DỤC - Đây là ví dụ minh họa phishing</small>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <div class="footer-content">
+            <p>&copy; 2026 Trip.com. Giá tốt nhất cho du lịch Việt Nam.</p>
+            <div class="footer-links">
+                <a href="#" onclick="phishCaught()">Về chúng tôi</a> |
+                <a href="#" onclick="phishCaught()">Điều khoản</a> |
+                <a href="#" onclick="phishCaught()">Bảo mật</a> |
+                <a href="#" onclick="phishCaught()">Liên hệ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
