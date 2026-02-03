@@ -107,7 +107,7 @@ $(function() {
 
     // Callout when the user clicks on something from fake UI
     $('html').on('click.spoof', function() {
-      playFailSound();
+      // Không phát âm thanh mario nữa
       $('#spoofHeader').stop().effect('shake', function() {
         $.facebox({div: '#phished'});
       });
