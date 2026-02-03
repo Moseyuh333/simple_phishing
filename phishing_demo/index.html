@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đặt vé máy bay, khách sạn giá rẻ nhất tại Trip.com. Ưu đãi hấp dẫn mỗi ngày!">
+    <meta name="keywords" content="đặt vé máy bay, khách sạn giá rẻ, du lịch">
+    <title>Trip.com - Đặt vé máy bay, khách sạn giá rẻ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://vn.trip.com/favicon.ico">
+</head>
+<body>
+    <!-- Header giống Trip.com thật -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <button class="menu-btn">☰</button>
+                <div class="logo">
+                    <svg width="120" height="32" viewBox="0 0 120 32" fill="none">
+                        <text x="0" y="24" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1677FF">Trip.com</text>
+                    </svg>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Điểm đến, địa điểm tham quan, khách sạn..." onclick="phishCaught(event)">
+                    <button class="search-btn" onclick="phishCaught(event)">🔍</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#" onclick="phishCaught(event)">📱 Ứng Dụng</a>
+                <a href="#" onclick="phishCaught(event)">Đăng Cơ Sở Lưu Trú</a>
+                <a href="#" onclick="phishCaught(event)">🇻🇳 VND</a>
+                <a href="#" onclick="phishCaught(event)">Chăm sóc khách hàng</a>
+                <a href="#" onclick="phishCaught(event)">Tìm Đặt Chỗ</a>
+                <button class="login-btn" onclick="phishCaught(event)">Đăng nhập/đăng ký</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <aside class="sidebar">
+        <a href="#" onclick="phishCaught(event)">🏨 Khách sạn & Chỗ nghỉ</a>
+        <a href="#" onclick="phishCaught(event)">✈️ Vé Máy bay</a>
+        <a href="#" onclick="phishCaught(event)">🚂 Tàu</a>
+        <a href="#" onclick="phishCaught(event)">🚗 Đưa Đón Sân Bay</a>
+        <a href="#" onclick="phishCaught(event)">🎯 Tour & Hoạt Động</a>
+        <a href="#" onclick="phishCaught(event)">📦 Combo Tiết Kiệm</a>
+        <a href="#" onclick="phishCaught(event)">👥 Cẩm Hứng Du Lịch</a>
+        <a href="#" onclick="phishCaught(event)">ℹ️ Phần Thưởng Trip.com</a>
+        <a href="#" onclick="phishCaught(event)">📱 Ứng Dụng</a>
+    </aside>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Du lịch dễ dàng khắp mọi nơi cùng Trip.com</h1>
+            <div class="hero-features">
+                <span>✓ Thanh Toán An Toàn</span>
+                <span>✓ Hỗ trợ toàn cầu trong 30 giây</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs-container">
+        <button class="tab active" onclick="phishCaught(event)">🏨 Khách Sạn</button>
+        <button class="tab" onclick="phishCaught(event)">✈️ Vé Máy bay</button>
+        <button class="tab" onclick="phishCaught(event)">🚂 Vé Tàu</button>
+        <button class="tab" onclick="phishCaught(event)">🚗 Đưa đón sân bay</button>
+        <button class="tab" onclick="phishCaught(event)">🎯 Tour & Hoạt Động</button>
+        <button class="tab" onclick="phishCaught(event)">📦 Combo Tiết Kiệm</button>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-form-container">
+        <form class="search-form" onsubmit="phishCaught(event)">
+            <div class="form-group">
+                <label>Điểm đến</label>
+                <input type="text" placeholder="Thành phố, sân bay, khu vực, địa điểm nổi bật hoặc tên..." onclick="phishCaught(event)">
+            </div>
+            <div class="form-group">
+                <label>Nhận phòng</label>
+                <input type="text" value="T3, 3 thg 2" onclick="phishCaught(event)">
+            </div>
+            <div class="form-group">
+                <label>Trả phòng</label>
+                <input type="text" value="T4, 4 thg 2" onclick="phishCaught(event)">
+            </div>
+            <div class="form-group">
+                <label>Phòng và khách</label>
+                <input type="text" value="1 phòng, 2 Người Lớn, 0 Trẻ Em" onclick="phishCaught(event)">
+            </div>
+            <button type="submit" class="search-submit-btn">🔍 Tìm</button>
+        </form>
+    </div>
+
+    <!-- Promotions Section -->
+    <section class="promotions">
+        <h2>Dành riêng cho người dùng mới</h2>
+        <div class="promo-grid">
+            <div class="promo-card" onclick="phishCaught(event)">
+                <h3>Nhiều ưu đãi giảm giá du lịch dành cho người dùng mới!</h3>
+                <button class="promo-btn">Đăng Nhập Và Nhận Tất Cả</button>
+            </div>
+            <div class="promo-card" onclick="phishCaught(event)">
+                <h3>Giảm Giá Đến 100...</h3>
+                <p>Vé Máy bay | Chi dành cho ứng dụng</p>
+                <button class="promo-btn">Nhận Tất Cả</button>
+            </div>
+            <div class="promo-card" onclick="phishCaught(event)">
+                <h3>Giảm Giá 10%</h3>
+                <p>Khách Sạn</p>
+                <button class="promo-btn">Nhận Tất Cả</button>
+            </div>
+            <div class="promo-card" onclick="phishCaught(event)">
+                <h3>Giảm Giá 5%</h3>
+                <p>Tour & Hoạt Động</p>
+                <button class="promo-btn">Nhận Tất Cả</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Trip.com. Giá tốt nhất cho du lịch Việt Nam.</p>
+            <div class="footer-links">
+                <a href="https://vn.trip.com" onclick="phishCaught(event)">Về chúng tôi</a>
+                <a href="https://vn.trip.com" onclick="phishCaught(event)">Điều khoản</a>
+                <a href="https://vn.trip.com" onclick="phishCaught(event)">Bảo mật</a>
+                <a href="https://vn.trip.com" onclick="phishCaught(event)">Liên hệ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Phishing Popup Modal -->
+    <div id="phishModal" class="modal">
+        <div class="modal-content">
+            <img src="https://media.giphy.com/media/l0HlvtIPzPdt2usKs/giphy.gif" alt="Phished" class="phish-gif">
+            <h2>Phish completed!</h2>
+            <p class="phish-id">23162046_NMK</p>
+            <button class="close-modal" onclick="closeModal()">Đóng</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
